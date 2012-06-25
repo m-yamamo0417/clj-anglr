@@ -1,0 +1,20 @@
+<html ng-app>
+  <head>
+    <script src="http://code.angularjs.org/angular-1.0.1-ffb27013.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <h1>pity chat</h1>
+    <div ng-controller="ChatCtrl" ng-init="fetchMessages()">
+      <input type="text" ng-model="message">
+      <button ng-click="sendMessage()">
+	send
+      </button>
+      <ul>
+	<li ng-repeat="message in messages">
+	  {{message}}
+	</li>
+      </ul>
+    </div>
+  </body>
+</html>
