@@ -1,10 +1,10 @@
 # clj-anglr
 
-FIXME: write description
+sample app for Compojure and AngularJS.
 
 ## Usage
 
-FIXME: write
+jetty run
 
 ## License
 

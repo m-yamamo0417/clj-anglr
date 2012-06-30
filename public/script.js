@@ -1,4 +1,4 @@
-function ChatCtrl($scope, $http){
+function BBSCtrl($scope, $http){
     $scope.message = '';
     $scope.messages = '';
     
@@ -11,6 +11,6 @@ function ChatCtrl($scope, $http){
     $scope.fetchMessages = function() {
 	$http.get('/fetch').success(function(data){
 	    $scope.messages = data;
-	})
+	});
     };
 }
