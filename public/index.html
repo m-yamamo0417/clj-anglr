@@ -1,10 +1,14 @@
-<html ng-app>
+<html ng-app="components">
   <head>
     <script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
+    <script type="text/javascript" src="components.js"></script>
     <script type="text/javascript" src="script.js"></script>
   </head>
   <body>
     <h1>pity_bbs</h1>
+    <!-- counter -->
+    <counter></counter>
+    <a href="/hello.html">hello</a>
     <div ng-controller="BBSCtrl" ng-init="fetchMessages()">
       <input type="text" ng-model="message">
       <button ng-click="sendMessage()">
